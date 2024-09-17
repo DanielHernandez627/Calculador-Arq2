@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="btnRadio">#FF5733</color>
+    <color name="btnCheck">#04E892</color>
+    <color name="btnSpinner">#DA2490</color>
+</resources>

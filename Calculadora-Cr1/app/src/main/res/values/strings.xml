@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">calcuiladora</string>
+    <string name="tlPrincipal">Mis Calculadoras</string>
+    <string name="btnRadio">Radio Button</string>
+    <string name="btnCheck">Check Box</string>
+    <string name="btnSpinner">Spinner</string>
+    <string name="tlRadio">Radio Button</string>
+    <string name="tlCheck">Check Box</string>
+    <string name="tlSpinner">Spinner</string>
+    <string name="hintGeneral1">Digite Numero 1</string>
+    <string name="hintGeneral2">Digite Numero 2</string>
+    <string name="txtGeneralSuma">Sumar</string>
+    <string name="txtGeneralResta">Restar</string>
+    <string name="txtGeneralMulti">Multiplicar</string>
+    <string name="txtGeneralDivi">Dividir</string>
+    <string name="btnGeneralCalcular">Calcular</string>
+    <string name="btnGeneralRegresar">Regresar</string>>
+    <string name="txtGeneralResult">0</string>
+</resources>

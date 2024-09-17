@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpinnerAc">
+
+
+<TextView
+    android:id="@+id/tlCheck"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="@string/tlSpinner"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/txtn1S"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="24dp"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    android:hint="@string/hintGeneral1"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tlCheck" />
+
+<EditText
+    android:id="@+id/txtn2S"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="24dp"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    android:hint="@string/hintGeneral2"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtn1S" />
+
+<EditText
+    android:id="@+id/txtResultS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="24dp"
+    android:ems="10"
+    android:text="@string/txtGeneralResult"
+    android:textAlignment="center"
+    android:inputType="text"
+    android:textSize="24sp"
+    android:enabled="false"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtn2S" />
+
+<Spinner
+    android:id="@+id/spinnerS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="26dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtResultS" />
+
+<Button
+    android:id="@+id/btnCalcularS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="36dp"
+    android:text="@string/btnGeneralCalcular"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinnerS" />
+<Button
+    android:id="@+id/btnRegresarS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="36dp"
+    android:text="@string/btnGeneralRegresar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnCalcularS" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkBox">
+
+<TextView
+    android:id="@+id/tlCheck"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="@string/tlCheck"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/txtn1C"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="24dp"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    android:hint="@string/hintGeneral1"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tlCheck" />
+
+<EditText
+    android:id="@+id/txtn2C"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="24dp"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    android:hint="@string/hintGeneral2"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtn1C" />
+
+    <CheckBox
+        android:id="@+id/checkBoxS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtGeneralSuma"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultC"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtGeneralResta"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxS"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtGeneralMulti"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxR"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtGeneralDivi"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxM"/>
+
+
+<EditText
+    android:id="@+id/txtResultC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="24dp"
+    android:ems="10"
+    android:text="@string/txtGeneralResult"
+    android:textAlignment="center"
+    android:inputType="text"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtn2C" />
+
+<Button
+    android:id="@+id/btnCalcularC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="36dp"
+    android:text="@string/btnGeneralCalcular"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/checkBoxD" />
+<Button
+    android:id="@+id/btnRegresarC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="36dp"
+    android:text="@string/btnGeneralRegresar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnCalcularC" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
